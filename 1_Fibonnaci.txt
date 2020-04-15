@@ -1,0 +1,16 @@
+   #EJERCICIO NUMERO 1
+#Funcion para calcular la succesion de fibonacci
+(deffunction fib (?n)
+        (if     
+            (< ?n 2) then 
+                ?n
+        else 
+            (+ (fib(- ?n 1)) (fib(- ?n 2)))
+        )
+)
+#Ingrese la cantidad a calcular fibonacci
+(bind ?num 10)
+#Llamamos a  nuestra funcion
+(loop-for-count( ?cont 0 (- ?num 1) ) do
+        (printout t "" (fib ?cont) crlf)
+)

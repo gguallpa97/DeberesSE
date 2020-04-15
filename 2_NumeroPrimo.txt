@@ -1,0 +1,21 @@
+   #EJERCICIO NUMERO 2
+#Funcion para verificar si un numero es primo.
+(deffunction primo (?n)
+    (if 
+        (< ?n 2) then
+         (printout t " NUMERO NO PRIMO " crlf)
+         (return False)
+    )
+    (loop-for-count( ?i 2 (- ?n 1)) do
+        (if 
+            (= (mod ?n ?i) 0) then
+            (printout t " NUMERO NO PRIMO " crlf)
+            (return False)
+        )    
+    )
+    (printout t " NUMERO PRIMO " crlf)
+    (return True)
+)
+#Llamamos a la funcion
+(printout t "" (primo 2) crlf)
+(printout t "" (primo 4) crlf)
