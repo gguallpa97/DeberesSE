@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>MAQUINAS</NAME>
+	<OUTCOME>M1</OUTCOME>
+	<OUTCOME>M2</OUTCOME>
+	<OUTCOME>M3</OUTCOME>
+	<PROPERTY>position = (7094.0, 5050.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>ERORES</NAME>
+	<OUTCOME>E</OUTCOME>
+	<OUTCOME>NE</OUTCOME>
+	<PROPERTY>position = (7293.0, 5050.0)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>MAQUINAS</FOR>
+	<TABLE>0.27 0.43 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>ERORES</FOR>
+	<GIVEN>MAQUINAS</GIVEN>
+	<TABLE>0.07 0.93 0.05 0.95 0.04 0.96</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>
